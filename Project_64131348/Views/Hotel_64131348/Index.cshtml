@@ -1,0 +1,520 @@
+﻿@model IEnumerable<Project_64131348.Models.Phong>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>KHÁCH SẠN COASTAL HAVEN</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Resort Inn Responsive , Smartphone Compatible web template , Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+               function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="~/Assets/Client/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Assets/Client/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Assets/Client/css/chocolat.css" type="text/css" media="screen">
+    <link href="~/Assets/Client/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="~/Assets/Client/css/flexslider.css" type="text/css" media="screen" property="" />
+    <link rel="stylesheet" href="~/Assets/Client/css/jquery-ui.css" />
+    <link href="~/Assets/Client/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="~/Assets/Client/js/modernizr-2.6.2.min.js"></script>
+
+    <!-- Remove Google Fonts links -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet"> -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet"> -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> -->
+
+    <style>
+        body {
+            font-family: Arial, Tahoma, "Times New Roman", sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Arial, Tahoma, "Times New Roman", sans-serif;
+        }
+
+        p {
+            font-family: Arial, Tahoma, "Times New Roman", sans-serif;
+        }
+
+        a {
+            font-family: Arial, Tahoma, "Times New Roman", sans-serif;
+        }
+
+
+        .menu__item--current .menu__link::after, .menu__item--current .menu__link::before {
+            opacity: 0 !important;
+        }
+
+        .menu__item:hover a {
+            color: yellow !important;
+        }
+
+        .menu--iris .menu__link::before, .menu--iris .menu__link::after {
+            display: none;
+        }
+
+        .w3layouts-banner-top {
+            background: url(../Images2/gallery1.jpg) no-repeat 0px 0px;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+        }
+
+        .w3layouts-banner-top1 {
+            background: url(../Images2/beach1.jpg) no-repeat 0px 0px;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+        }
+
+        .w3layouts-banner-top2 {
+            background: url(../Images2/gallery3.jpg) no-repeat 0px 0px;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+
+    <div class="w3_navigation" style="background: #4e7adc">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header navbar-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a class="navbar-brand" style="font-size:24px; height:100%;" href="#">COASTAL HAVEN</a></h1>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <nav class="menu menu--iris">
+                        <ul class="nav navbar-nav menu__list" style="margin-top: 0;">
+                            <li class="menu__item menu__item--current"><a href="" style="color:yellow !important;" class="menu__link">Trang chủ</a></li>
+                            <li class="menu__item"><a href="#about" class="menu__link scroll">Giới thiệu</a></li>
+                            <li class="menu__item"><a href="#gallery" class="menu__link scroll">Hình ảnh</a></li>
+                            <li class="menu__item"><a href="#rooms" class="menu__link scroll">Phòng</a></li>
+                            <li class="menu__item"><a href="#contact" class="menu__link scroll">Liên hệ</a></li>
+                            <li class="menu__item"><a href="@Url.Action("PhanHoi", "Hotel_64131348")" class="menu__link">Phản hồi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- //header -->
+    <!-- banner -->
+    <div id="home" class="w3ls-banner">
+        <!-- banner-text -->
+        <div class="slider">
+            <div class="callbacks_container">
+                <ul class="rslides callbacks callbacks1" id="slider4">
+                    <li>
+                        <div class="w3layouts-banner-top">
+
+                            <div class="container">
+                                <div class="agileits-banner-info">
+                                    <h4>COASTAL HAVEN</h4>
+                                    <h3>Chào mừng bạn đến với khách sạn</h3>
+                                    <p>Rất hi vọng bạn sẽ có trải nghiệm tốt nhất</p>
+                                    <div class="agileits_w3layouts_more menu__item">
+                                        <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3layouts-banner-top w3layouts-banner-top1">
+                            <div class="container">
+                                <div class="agileits-banner-info">
+                                    <h4>COASTAL HAVEN</h4>
+                                    <h3>Tận hưởng khoảnh khắc bên gia đình</h3>
+                                    <p>Đồng hành, gắn bó với gia đình và bạn bè</p>
+                                    <div class="agileits_w3layouts_more menu__item">
+                                        <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3layouts-banner-top w3layouts-banner-top2">
+                            <div class="container">
+                                <div class="agileits-banner-info">
+                                    <h4>COASTAL HAVEN</h4>
+                                    <h3>Bạn muốn kỳ nghỉ sang trọng?</h3>
+                                    <p>Nhận chỗ ở ngay hôm nay</p>
+                                    <div class="agileits_w3layouts_more menu__item">
+                                        <a href="#" class="menu__link" data-toggle="modal" data-target="#myModal">Đọc thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+            <!--banner Slider starts Here-->
+        </div>
+        <div class="thim-click-to-bottom">
+            <a href="#about" class="scroll">
+                <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <!-- //banner -->
+    <!--//Header-->
+    <!-- //Modal1 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <!-- Modal1 -->
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>COASTAL HAVEN</span></h4>
+                    <img src="~/Assets/Client/images/1.jpg" alt=" " class="img-responsive">
+                    <h5>Nơi nghĩ dưỡng lý tưởng tại Nha Trang</h5>
+                    <p>Coastal Haven Hotel mang đến cho du khách trải nghiệm lưu trú đẳng cấp với tầm nhìn tuyệt đẹp và tiện nghi sang trọng. Hãy tận hưởng thực đơn đa dạng, dịch vụ chu đáo và đội ngũ nhân viên thân thiện của chúng tôi, biến kỳ nghỉ của bạn thành những khoảnh khắc đáng nhớ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Modal1 -->
+    <div id="availability-agileits">
+        <div class="col-md-12 book-form-left-w3layouts">
+            <a href="#contact" class="scroll"><h2>ĐẶT PHÒNG</h2></a>
+        </div>
+
+        <div class="clearfix"> </div>
+    </div>
+    <!-- banner-bottom -->
+    <div class="banner-bottom">
+        <div class="container">
+            <div class="agileits_banner_bottom">
+                <h3><span>TRẢI NGHIỆM MỘT LƯU TRÚ TỐT, HƯỞNG CÁC ƯU ĐÃI TUYỆT VỜI</span> TÌM KIẾM NHẬN CHÀO MỪNG THÂN THIỆN CỦA CHÚNG TÔI</h3>
+            </div>
+            <div class="w3ls_banner_bottom_grids">
+                <ul class="cbp-ig-grid">
+                    <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_road"></span>
+                            <h4 class="cbp-ig-title">PHÒNG NGỦ CHÍNH HÃNG</h4>
+                            <span class="cbp-ig-category">COASTAL HAVEN</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_cube"></span>
+                            <h4 class="cbp-ig-title">BAN CÔNG NHÌN RA BIỂN</h4>
+                            <span class="cbp-ig-category">COASTAL HAVEN</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_users"></span>
+                            <h4 class="cbp-ig-title">QUÁN CAFE VỚI KHÔNG GIAN LỚN</h4>
+                            <span class="cbp-ig-category">COASTAL HAVEN</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_ticket"></span>
+                            <h4 class="cbp-ig-title">PHỦ SÓNG WIFI VỚI TỐC ĐỘ CAO</h4>
+                            <span class="cbp-ig-category">COASTAL HAVEN</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //banner-bottom -->
+    <!-- /about -->
+    <div class="about-wthree" id="about">
+        <div class="container-fluid">
+            <h3 class="title-w3-agileits title-black-wthree text-center">VỀ CHÚNG TÔI</h3>
+            <p class="about-para-w3ls text-center">Chúng tôi tự hào là một trong những khách sạn cao cấp tại Nha Trang, tọa lạc tại vị trí lý tưởng với tầm nhìn tuyệt đẹp ra biển cả. Sở hữu không gian sang trọng, dịch vụ chuyên nghiệp và tiện nghi đẳng cấp, chúng tôi cam kết mang đến cho bạn một kỳ nghỉ thư giãn, trọn vẹn và đầy trải nghiệm tuyệt vời. Hãy đến và tận hưởng không gian nghỉ dưỡng hoàn hảo, nơi bạn có thể thư giãn và khám phá vẻ đẹp của thành phố biển Nha Trang.</p>
+
+            <!-- Bố cục 4 ảnh nằm ngang -->
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 10px;">
+                    <img src="~/Assets/Client/images/ab1.png" alt="Image 1"
+                         style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 10px;">
+                    <img src="~/Assets/Client/images/ab2.png" alt="Image 2"
+                         style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 10px;">
+                    <img src="~/Assets/Client/images/ab3.png" alt="Image 3"
+                         style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12" style="padding: 10px;">
+                    <img src="~/Assets/Client/images/ab4.png" alt="Image 4"
+                         style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- //about -->
+    <!--sevices-->
+    <div class="advantages">
+        <div class="container">
+            <div class="advantages-main">
+                <h3 class="title-w3-agileits">DỊCH VỤ CỦA CHÚNG TÔI</h3>
+                <div class="advantage-bottom">
+                    <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
+                        <div class="advantage-block ">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            <h4>Ở trước, trả sau! </h4>
+                            <p><i class="fa fa-check" aria-hidden="true"></i>Phòng được trang trí, có máy lạnh thích hợp</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i>Ban công riêng tư</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
+                        <div class="advantage-block">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <h4>Nhà hàng 24 giờ</h4>
+                            <p><i class="fa fa-check" aria-hidden="true"></i>Phục vụ phòng 24 giờ</p>
+                            <p><i class="fa fa-check" aria-hidden="true"></i>Dịch vụ trợ giúp đặc biệt 24 giờ</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+    <!-- rooms & rates -->
+    <div class="plans-section" id="rooms">
+        <div class="container">
+            <h3 class="title-w3-agileits title-black-wthree">PHÒNG VÀ GIÁ</h3>
+            <div class="priceing-table-main">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 price-grid ">
+                        <div class="price-block agile">
+                            <div class="price-gd-top">
+                                <img src="~/Images/@item.LoaiPhong.hinhAnh" alt="" class="img-responsive" style="height:300px; width:255px" />
+                                <h4>@item.LoaiPhong.tenLP</h4>
+                            </div>
+                            <div class="price-gd-bottom">
+                                <div class="price-selet">
+                                    <h3><span>@{ string dongia = item.LoaiPhong.donGia.ToString("#,##0");} @dongia</span>VND</h3>
+                                    <a href="/Hotel_64131348/DatPhong?maphong=@item.maP">ĐẶT NGAY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--// rooms & rates -->
+    <!-- contact -->
+    <section class="contact-w3ls" id="contact">
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
+                <div class="contact-agileits">
+                    <h4>LIÊN HỆ ĐẶT PHÒNG</h4>
+                    <h5 style="color:white; font-size:18px">Chỉ cần để lại thông tin liên lạc, chúng tôi sẽ liên hệ với bạn để giúp bạn có một căn phòng cùng những dịch vụ tốt nhất khi đến đây.</h5>
+                    <br />
+                    @using (Html.BeginForm("Create", "Hotel_64131348", FormMethod.Post, new { @name = "sentMessage", @id = "contactForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        @*<form method="post" action="/Hotel/Create" name="sentMessage" id="contactForm">*@
+                        <div class="control-group form-group">
+                            <label class="contact-p1">Họ và tên:</label>
+                            <input type="text" class="form-control" name="hoTen" id="name" required>
+                            <p class="help-block"></p>
+                        </div>
+
+                        <div class="control-group form-group">
+
+                            <label class="contact-p1">Số điện thoại:</label>
+                            <input type="tel" class="form-control" name="sdt" id="phone" required>
+                            <p class="help-block"></p>
+                        </div>
+
+                        <div class="control-group form-group">
+                            <label class="contact-p1">Địa chỉ email:</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                            <p class="help-block"></p>
+                        </div>
+
+                        <div class="control-group form-group">
+                            <label class="contact-p1">Ngày đến:</label>
+                            <input type="datetime-local" id="ngayDen" name="ngayDen" class="form-control">
+                            <p class="help-block"></p>
+                        </div>
+
+                        <div class="control-group form-group">
+                            <label class="contact-p1">Ngày Đi:</label>
+                            <input type="datetime-local" id="ngayDi" name="ngayDi" class="form-control">
+                            <p class="help-block"></p>
+                        </div>
+
+                        <input type="submit" name="sub" value="Gửi ngay" class="btn btn-primary">
+                    }
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
+                <h4>LIÊN LẠC</h4>
+                <h5 style="color:white; font-size:18px" Cảm ơn Quý khách đã ghé thăm trang web của chúng tôi, rất mong sớm được đón tiếp Qúy khách. Dưới đây là thông tin liên lạc của chúng tôi! </h5>
+                <p class="contact-agile1"><strong>Số điện thoại : </strong>0373522786</p>
+                <p class="contact-agile1"><strong>Email :</strong> nguyentramy@gmail.com</p>
+                <p class="contact-agile1"><strong>Địa chỉ :</strong> Đại học Nha Trang</p>
+
+                <div class="social-bnr-agileits footer-icons-agileinfo">
+                    <ul class="social-icons3">
+                        <li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+                        <li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+                        <li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li>
+                    </ul>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.7063015949752!2d109.20018721463755!3d12.268143691320134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317067ed3a052f11%3A0xd464ee0a6e53e8b7!2sNha%20Trang%20University!5e0!3m2!1sen!2s!4v1623033647829!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- /contact -->
+    <div class="copy">
+        <p>© 2025 COASTAL HAVEN. Thiết kế bởi <a href="#">Trà My</a> </p>
+    </div>
+    <!--/footer -->
+    <!-- js -->
+    <script type="text/javascript" src="~/Assets/Client/js/jquery-2.1.4.min.js"></script>
+    <!-- contact form -->
+    <script src="~/Assets/Client/js/jqBootstrapValidation.js"></script>
+
+    <!-- /contact form -->
+    <!-- Calendar -->
+    <script src="~/Assets/Client/js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+        });
+    </script>
+    <!-- //Calendar -->
+    <!-- gallery popup -->
+    <link rel="stylesheet" href="~/Assets/Client/css/swipebox.css">
+    <script src="~/Assets/Client/js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!-- //gallery popup -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="~/Assets/Client/js/move-top.js"></script>
+    <script type="text/javascript" src="~/Assets/Client/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <!-- flexSlider -->
+    <script defer src="~/Assets/Client/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- //flexSlider -->
+    <script src="~/Assets/Client/js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!--search-bar-->
+    <script src="~/Assets/Client/js/main.js"></script>
+    <!--//search-bar-->
+    <!--tabs-->
+    <script src="~/Assets/Client/js/easy-responsive-tabs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true,   // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+            $('#verticalTab').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
+        });
+    </script>
+    <!--//tabs-->
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+
+    <div class="arr-w3ls">
+        <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+    <!-- //smooth scrolling -->
+    <script type="text/javascript" src="~/Assets/Client/js/bootstrap-3.1.1.min.js"></script>
+</body>
+</html>
+
+
+
+

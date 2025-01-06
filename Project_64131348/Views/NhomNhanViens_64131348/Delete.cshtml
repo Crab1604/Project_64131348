@@ -1,0 +1,37 @@
+﻿@model Project_64131348.Models.NhomNhanVien
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h3 class="color_new">>Bạn chắc chắc muốn xóa thông tin này?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID nhóm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDNhom)
+        </dd>
+        <dt>
+            Tên nhóm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNhom)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-primary" /> |
+            @Html.ActionLink("Trở về", "Index")
+        </div>
+    }
+</div>

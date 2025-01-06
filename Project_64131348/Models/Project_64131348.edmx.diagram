@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f82bcbd27aaf4639be4b8ee48af4e2a2" Name="Diagram1" ZoomLevel="40">
+        <EntityTypeShape EntityType="Project_64131348Model.CTPhieuDatPhong" Width="1.5" PointX="8.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.CTPhieuThuePhong" Width="1.5" PointX="13.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.DanhSachQuyen" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.DichVu" Width="1.5" PointX="11.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.HoaDon" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.KhachHang" Width="1.5" PointX="9" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.LienHe" Width="1.5" PointX="15.25" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.LoaiPhong" Width="1.5" PointX="3.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.NhanVien" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.NhomNhanVien" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.PhanHoi" Width="1.5" PointX="17.125" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.PhieuDatPhong" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.PhieuThuePhong" Width="1.5" PointX="11.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.Phong" Width="1.5" PointX="6" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.QuanTri" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Project_64131348Model.Quyen" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="Project_64131348Model.ctpdp_p_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ctpdp_pdp_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ctptp_dv_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ctptp_p_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ctptp_ptp_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.FK_DanhSachQuyen_NhomNhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.FK_DanhSachQuyen_Quyen" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.hd_nv_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.hd_ptp_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.pdp_kh_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ptp_kh_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.p_lp_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.pdp_nv_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ptp_nv_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.qt_nv_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.qt_nnv_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="Project_64131348Model.ptp_pdp_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
